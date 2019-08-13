@@ -1,0 +1,151 @@
+#videos {
+  position: fixed;
+  margin: 0;
+}
+
+#videos video {
+  max-width: 500px;
+  max-height: 500px;
+  left: 400px;
+  transition: linear all .5s;
+  -webkit-filter: blur(40px);
+  float: left;
+  opacity: 1;
+}
+
+#video-1 {
+  left: 15vw;
+  top: 25vh;
+  position: absolute;
+}
+
+#video-2 {
+  left: 30vw;
+  top: 50vh;
+  position: absolute;
+}
+
+#video-3 {
+  left: 65vw;
+  top: 8vh;
+  position: absolute;
+}
+
+#video-1 #v1 {
+  border: 1px solid snow;
+  height: 450px;
+  width: 250px;
+}
+
+#video-2 #v2 {
+  border: 1px solid snow;
+  height: 360px;
+  width: 480px;
+}
+
+#video-3 #v3 {
+  border: 1px solid snow;
+  height: 150px;
+  width: 500px;
+}
+
+#v1,#v2,#v3 {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(30deg);
+  -webkit-transform: translate(-50%,-50%) rotate(30deg);
+  opacity: 0;
+  transition: linear all .5s;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#video-frame {
+  width: 960px;
+  height: 540px;
+  margin: auto;
+  margin-top: calc(50vh - 270px);
+  margin-left: calc(50vw - 480px);
+  padding: 0;
+  background-color: Snow;
+  transition: linear all .5s;
+  position: absolute;
+  /* float: left; */
+  /* background-color: pink; */
+}
+
+#video-frame video {
+  max-width: 960px;
+  max-height: 540px;
+  outline: none;
+}
+
+#info-container {
+  position: fixed;
+  width: 600px;
+  height: 640px;
+  background-color: Khaki;
+  float: left;
+  left: calc(50vw - 300px);
+  top: calc(50vh - 320px);
+  filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 1));
+  display: none;
+}
+
+#info-text {
+  overflow: scroll;
+  position: absolute;
+  width: 540px;
+  height: 580px;
+  padding: 30px;
+}
+
+#project-info-blur {
+  transition: linear all .5s;
+  border: 1px solid snow;
+}
+
+#back-blur {
+  transition: linear all .5s;
+  border: 1px dashed snow;
+}
+
+#project-info-blur:hover,#back-blur:hover {
+  -webkit-filter: blur(40px);
+}
+
+.bottom {
+  position: fixed;
+  float: left;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  cursor: default;
+  color: snow;
+}
+
+.top {
+  position: fixed;
+  float: left;
+  top: 0px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+#ch {
+  display: none;
+}

@@ -1,0 +1,162 @@
+ul {
+  list-style: none;
+  margin-top: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+a:after {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin-top: 0px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#gallery {
+  padding: 0;
+  background-color: Snow;
+  transition: linear all .5s;
+  position: absolute;
+  float: left;
+}
+
+#scrolls {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space:nowrap;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#scrolls img {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.bottom {
+  position: fixed;
+  float: left;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  cursor: default;
+}
+
+.top {
+  position: fixed;
+  float: left;
+  top: 0px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+#ch {
+  display: none;
+}
+
+#book-container,
+#info-container {
+  position: fixed;
+  width: 600px;
+  height: 640px;
+  background-color: Khaki;
+  float: left;
+  left: calc(50vw - 300px);
+  top: calc(50vh - 320px);
+  filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 1));
+  display: none;
+}
+
+#book-container #bookpic {
+  width: 540px;
+  height: 360px;
+  margin: 30px;
+  margin-bottom: 0px;
+}
+
+.SlideImg {
+  display: none;
+  position: absolute;
+}
+
+#book-container img {
+  max-width: 540px;
+  max-height: 360px;
+  position: absolute;
+  float: left;
+  left: 270px;
+  transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+}
+
+#bookpic #left {
+  width: 260px;
+  height: 360px;
+  position: absolute;
+  float: left;
+  padding-left:10px;
+  text-align: left;
+  line-height: 360px;
+}
+
+#bookpic #right {
+  width: 260px;
+  height: 360px;
+  position: absolute;
+  float: left;
+  left: 300px;
+  padding-right: 10px;
+  text-align: right;
+  line-height: 360px;
+}
+
+#book-container ul {
+  display: block;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding: 0;
+}
+
+#book-container .buy {
+  position: absolute;
+  float: right;
+  right: 10px;
+  bottom: 10px;
+}
+
+#info-text {
+  overflow: scroll;
+  position: absolute;
+  width: 540px;
+  height: 580px;
+  padding: 30px;
+}
+
+#project-info-blur,#buy-book-blur,#buy-blur {
+  transition: linear all .5s;
+  border: 1px solid black;
+}
+
+#back-blur {
+  transition: linear all .5s;
+  border: 1px dashed black;
+}
+
+#project-info-blur:hover,
+#buy-book-blur:hover,
+#buy-blur:hover,
+#back-blur:hover {
+  -webkit-filter: blur(40px);
+}
